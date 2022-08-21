@@ -1,0 +1,71 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js" type="module"></script>
+    <title>Service de Garde - Mon Rêve d´Arc-en-ciel</title>
+</head>
+
+<body>
+    <div class="login">
+        <div class="form-container">
+            <img class="back" src="./img/guarderia.jpg" alt="" />
+            <form action="/" class="form">
+                <div class="encabezado">
+                    <div class="col">
+                        <div class="nom">
+                            <label for="email" class="label">Bonjour; </label>
+                            <input type="text" class="label casilla-nom" placeholder="nom">
+                        </div>
+                        <br>
+                        <label for="" class="label margin"> Théme de la semaine</label>
+                    </div>
+                    <br>
+                    <label id="date" class="label" for="date"></label>
+                </div>
+
+                <div id="activites" class="checkbox">
+                </div>
+
+                <label class="label">Repas:</label>
+                <div class="repas">
+                    <label class="label" for="">Collation:</label>
+                    <textarea class="label textarea" name="comments" id="" cols="10" rows="5"
+                        placeholder="Collation"></textarea>
+                    <br>
+                    <label class="label" for="">Dîner:</label>
+                    <textarea class="label textarea" name="comments" id="" cols="10" rows="5"
+                        placeholder="Dîner"></textarea>
+                </div>
+
+                <label class="label">Humeur:</label>
+                <div class="checkbox imagen">
+                    <img id="sad" src="./img/sad.png" alt="" />
+                    <img id="maso" src="./img/maso.png" alt="" />
+                    <img id="happy" src="./img/happy.png" alt="" />
+                </div>
+
+                <label class="label">Sieste:</label>
+                <div class="checkbox imagen">
+                    <!--<img id="sad" src="./img/notSleep.png" alt="" />
+                    <img id="maso" src="./img/mediumSleep.png" alt="" />
+                    <img id="happy" src="./img/fullSleep.png" alt="" />-->
+                </div>
+
+                <label class="label">Commentaines:</label>
+                <textarea class="label textarea" name="comments" id="" cols="10" rows="5"
+                    placeholder="Commentaines ecri"></textarea>
+            </form>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+    
+</body>
+
+</html>
