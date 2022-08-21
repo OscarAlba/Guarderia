@@ -1,0 +1,20 @@
+{
+  "name": "guarderia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OscarAlba/Guarderia.git"
+  },
+  "keywords": [],
+  "author": "Oscar Alba",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OscarAlba/Guarderia/issues"
+  },
+  "homepage": "https://github.com/OscarAlba/Guarderia#readme"
+}
