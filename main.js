@@ -12,6 +12,8 @@ let activities = ["Langagier", "Cognitif", "Socio affectif", "Moteur"];
 
 let imgsSelected = { sad: false, maso: false, happy: false };
 
+let moonSelected = { awake: false, med:false, sleep: false};
+
 const happy = document.querySelector("#happy");
 const maso = document.querySelector("#maso");
 const sad = document.querySelector("#sad");
@@ -87,5 +89,61 @@ sad.addEventListener("click", function () {
     } else {
         sad.setAttribute("src", "./img/sad-select.png");
         imgsSelected.sad = true;
+    }
+});
+
+
+const sleep = document.querySelector("#sleep");
+const med = document.querySelector("#med");
+const awake = document.querySelector("#awake");
+
+//Imgs Moons
+sleep.addEventListener("click", function () {
+
+    if (moonSelected.med) {
+        med.click();
+    } else if (moonSelected.awake) {
+        awake.click();
+    }
+
+    if (moonSelected.sleep) {
+        sleep.setAttribute("src", "./img/sleepy-moon.png");
+        moonSelected.sleep = false;
+    } else {
+        sleep.setAttribute("src", "./img/sleepy.png");
+        moonSelected.sleep = true;
+    }
+});
+
+med.addEventListener("click", function () {
+    if (moonSelected.sleep) {
+        sleep.click();
+    } else if (moonSelected.awake) {
+        awake.click();
+    }
+
+    if (moonSelected.med) {
+        med.setAttribute("src", "./img/med-moon.png");
+        moonSelected.med = false;
+    } else {
+        med.setAttribute("src", "./img/med.png");
+        moonSelected.med = true;
+    }
+});
+
+awake.addEventListener("click", function () {
+
+    if (moonSelected.sleep) {
+        sleep.click();
+    } else if (moonSelected.med) {
+        med.click();
+    }
+
+    if (moonSelected.awake) {
+        awake.setAttribute("src", "./img/nosleep.png");
+        moonSelected.awake = false;
+    } else {
+        awake.setAttribute("src", "./img/nosleep-moon.png");
+        moonSelected.awake = true;
     }
 });

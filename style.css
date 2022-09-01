@@ -130,6 +130,12 @@ body {
 .imagen{
     cursor: pointer;
 }
+
+.moon{
+    width: 80px;
+    height: 85px;
+}
+
 .nom{
     display: flex;
     flex-direction: row;
